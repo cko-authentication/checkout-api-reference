@@ -1,11 +1,13 @@
 type: string
 enum:
   - pending
-  - successful
-  - proof_of_attempt
+  - processing
+  - approved
+  - attempted
   - unavailable
-  - challenge_required_additional_authentication
-  - challenge_required_decoupled_authentication
-  - denied
+  - declined
   - rejected
+  - completed
+  - challenge_abandoned
+  - expired
 description: Indicates the status of the authentication

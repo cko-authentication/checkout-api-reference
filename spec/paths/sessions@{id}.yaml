@@ -11,6 +11,14 @@ get:
       required: true
       schema:
         type: string
+    - name: channel
+      in: header
+      schema:
+        type: string
+        enum:
+          - browser
+          - app
+      description: The type of device the client is making this request from
   responses:
     '200':
       description: Session retrieved successfully

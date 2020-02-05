@@ -18,7 +18,8 @@ post:
           $ref: '#/components/schemas/SessionRequest'
   responses:
     '201':
-      description: Session created successfully
+      description: | 
+        Session created successfully, when channel_data was present
       content:
         application/json:
           schema:
@@ -29,7 +30,8 @@ post:
         Cko-Version:
           $ref: "#/components/headers/Cko-Version"
     '202':
-      description: Session accepted successfully
+      description: | 
+        Session created successfully, when channel_data was not present
       content:
         application/json:
           schema:
