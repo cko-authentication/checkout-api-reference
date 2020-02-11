@@ -378,26 +378,3 @@ span.token.keyword {
 .scrollbar-container ul:first-child+div {
     display: none;
 }
-
-/* Logo */
-
-.logo {
-    width: 276px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #f8f8f8!important;
-}
-
-.logo img {
-    padding: 5px;
-}
-
-@media (max-width: 800px) {
-    .logo {
-        display: none;
-    }
-    .menu-content {
-        top: 0!important;
-    }
-}
