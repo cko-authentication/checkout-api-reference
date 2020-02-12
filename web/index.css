@@ -192,7 +192,6 @@ span.sc-cHGsZl.sc-jqCOkK.beUper {
 code, .evgDyP, .sc-cHGsZl.sc-jbKcbu.bMfIUD {
   font-family: Courier, monospace!important;
   background: var(--S10)!important;
-  border: 1px solid var(--S20)!important;
   padding: 2px!important;
   border-radius: 3px!important;
   color: var(--S500)!important;
@@ -322,7 +321,7 @@ span.sc-jlyJG.evvbxn {
 }
 
 .Dropdown-arrow {
-  border-color: #00aeef transparent transparent!important;
+  border-color: var(--S500) transparent transparent!important;
 }
 
 .Dropdown-menu {
@@ -332,8 +331,8 @@ span.sc-jlyJG.evvbxn {
 }
 
 .Dropdown-control:hover {
-  color: #00aeef!important;
-  border-color: #00aeef!important;
+  color: var(--S500)!important;
+  border-color: var(--S500)!important;
   box-shadow: none!important;
 }
 
@@ -356,8 +355,8 @@ span.sc-gwVKww {
 /* Search box */
 
 div[role=search] {
-  margin: 10px 20px!important;
-  border: 1px solid rgb(1, 58, 81, 0.2);
+  margin: 20px!important;
+  border: 1px solid var(--S300);
   border-radius: 3px;
   background: var(--S00);
 }
@@ -396,12 +395,12 @@ i.sc-gqPbQI.hQYSSu {
 
 /* Navigation */
 
-label.active {
-  background: rgb(1, 58, 81, 0.1)!important
+label.active, span.sc-gwVKww.SmuWE.active {
+  background: var(--S20)!important
 }
 
-label.hover {
-  background: white!important;
+label.hover, span.sc-gwVKww.SmuWE.hover {
+  background: var(--S10)!important;
 }
 
 /* RIGHT MENU */
@@ -447,6 +446,10 @@ span.sc-dqBHgY.iENVAs {
 
 /* Code samples */
 
+span.token.punctuation {
+  border: none!important;
+}
+
 .react-tabs__tab-panel, .react-tabs__tab.react-tabs__tab--selected {
   background: var(--S10)!important;
   color: var(--S1000)!important;
@@ -454,7 +457,7 @@ span.sc-dqBHgY.iENVAs {
 }
 
 .react-tabs__tab {
-  color: rgb(1, 58, 81, 0.5!important);
+  color: var(--S1000)!important);
 }
 
 ul>li.react-tabs__tab, ul>li.tab-success, ul>li.tab-error {
@@ -493,13 +496,13 @@ ul>li.tab-error.react-tabs__tab--selected {
 }
 
 .diZwLN>ul>li:hover {
-  color: #013a51!important;
+  color: var(--S1000)!important;
 }
 
 .diZwLN>ul>li.react-tabs__tab--selected {
   border-top: 0;
-  border-bottom: 2px solid #013a51!important;
-  color: #013a51!important;
+  border-bottom: 2px solid var(--S1000)!important;
+  color: var(--S1000)!important;
   font-weight: bold;
 }
 
