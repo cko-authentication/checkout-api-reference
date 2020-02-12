@@ -115,6 +115,11 @@ h1, h2, h3 {
   font-weight: 300!important;
 }
 
+h1 {
+  font-size: 40px;
+  line-height: 44px;
+}
+
 h2 {
   color: var(--S700)!important;
 }
