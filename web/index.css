@@ -68,14 +68,12 @@
   url("fonts/Graphik-Black-Web.svg#Graphik-Black-Web") format("svg");
 }
 
-* {
-  font-family: "Graphik", Arial, sans-serif!important;
-}
 
 body {
   color: var(--S1000);
   background: var(--S00);
   margin: 0;
+  font-family: "Graphik", Arial, sans-serif!important;
 }
 
 .redoc-wrap p, h1, h1 a, h3, span.sc-jKJlTe.eZZMfQ {
@@ -111,16 +109,22 @@ p {
   font-weight: normal;
 }
 
+p, h1, h2, h3, .redoc-wrap {
+  font-family: "Graphik", Arial, sans-serif!important;
+}
+
 h1, h2, h3 {
   font-weight: 300!important;
 }
 
 h1 {
-  font-size: 40px;
-  line-height: 44px;
+  font-size: 40px!important;
+  line-height: 44px!important;
 }
 
 h2 {
+  font-size: 24px!important;
+  line-height: 32px!important;
   color: var(--S700)!important;
 }
 
@@ -146,7 +150,10 @@ h1.sc-htoDjs.sc-fYxtnH.dTJWQH {
 .sc-ksYbfQ.sc-hmzhuo.jsTAxL {
   text-transform: uppercase;
   color: var(--R500);
+  font-family: "Graphik", Arial, sans-serif!important;
 }
+
+/* Border between params */
 
 td.sc-kgoBCf.kGwPhO {
   border-bottom: 1px solid var(--S20);
@@ -156,12 +163,6 @@ td.sc-kgoBCf.kGwPhO {
 
 .security-details th {
   font-weight: 500!important;
-}
-
-/* Endpoint URL */
-
-span.sc-dqBHgY.iENVAs {
-  font-family: Courier!important;
 }
 
 /* Request body schema background */
@@ -251,17 +252,20 @@ li.sc-eNQAEJ.gYsnwL {
 }
 
 li.sc-eNQAEJ.jdXjUh {
-  color: #999;
-  border: 1px solid #999;
+  color: var(--S100);
+  border: 1px solid var(--S100);
   font-weight: 500
 }
 
 li#react-tabs-2, li#react-tabs-3, li#react-tabs-4, li#react-tabs-5, li#react-tabs-6, li#react-tabs-7 {
-  border-top: 2px solid #999;
+  border-top: 2px solid var(--S100);
 }
+
+/* Deselected tabs */
 
 .irpqyy > ul > li {
   font-weight: 500!important;
+  color: var(--S100)!important;
 }
 
 .jXDsIv {
@@ -284,6 +288,12 @@ li#react-tabs-2, li#react-tabs-3, li#react-tabs-4, li#react-tabs-5, li#react-tab
 
 .scrollbar-container.undefined.sc-gPEVay.hclups.ps.ps--active-y {
   padding-bottom: 80px;
+}
+
+/* Responses */
+
+span.sc-jlyJG.evvbxn {
+    padding-left: 6px;
 }
 
 /* Successful response */
@@ -332,10 +342,18 @@ li#react-tabs-2, li#react-tabs-3, li#react-tabs-4, li#react-tabs-5, li#react-tab
 
 /* LEFT MENU */
 
+/* Sidebar menu */
+
 .menu-content {
   background: var(--S10)!important;
   top: 0;
   width: 300px!important;
+}
+
+/* Links */
+
+span.sc-gwVKww {
+  font-family: "Graphik", Arial, sans-serif!important;
 }
 
 /* Search box */
@@ -422,6 +440,12 @@ label.hover {
 
 .iuqUuR {
   color: rgb(1, 58, 81, 0.8)!important;
+}
+
+/* Endpoint URL */
+
+span.sc-dqBHgY.iENVAs {
+  font-family: Courier, monospace!important;
 }
 
 /* Code samples */
