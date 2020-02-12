@@ -257,15 +257,12 @@ li.sc-eNQAEJ.jdXjUh {
   font-weight: 500
 }
 
-li#react-tabs-2, li#react-tabs-3, li#react-tabs-4, li#react-tabs-5, li#react-tabs-6, li#react-tabs-7 {
-  border-top: 2px solid var(--S100);
-}
-
 /* Deselected tabs */
 
 .irpqyy > ul > li {
   font-weight: 500!important;
   color: var(--S100)!important;
+  border-color: var(--S100)!important;
 }
 
 .jXDsIv {
