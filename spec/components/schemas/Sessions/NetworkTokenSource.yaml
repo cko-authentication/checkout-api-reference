@@ -48,3 +48,9 @@ allOf:
         description: The customer's billing address
         allOf:
           - $ref: '#/components/schemas/Address'
+      home_phone:
+        $ref: '#/components/schemas/Phone'
+      mobile_phone:
+        $ref: '#/components/schemas/Phone'
+      work_phone:
+        $ref: '#/components/schemas/Phone'
