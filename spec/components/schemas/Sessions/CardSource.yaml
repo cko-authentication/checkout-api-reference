@@ -39,8 +39,8 @@ allOf:
         allOf:
           - $ref: '#/components/schemas/Address'
       home_phone:
-        $ref: '#/components/schemas/Phone'
+        $ref: '#/components/schemas/SessionPhone'
       mobile_phone:
-        $ref: '#/components/schemas/Phone'
+        $ref: '#/components/schemas/SessionPhone'
       work_phone:
-        $ref: '#/components/schemas/Phone'
+        $ref: '#/components/schemas/SessionPhone'
