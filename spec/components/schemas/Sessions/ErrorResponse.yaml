@@ -28,6 +28,7 @@ properties:
       - internal_server_error
       - unprocessable_entity
       - conflict
+      - duplicate_requests_detected
   error_codes:
     description: >
       Error response code. Full list of error codes below: <br/>
@@ -52,6 +53,9 @@ properties:
       • error_getting_instrument = Getting an instrument responded with an unexpected error or timed out. Only relevant for sources `id` or `token`. <br/>
       • instrument_used_is_not_card = Using an `id` type source that is not a card (only card type instruments are supported in 3DS) . <br/>
       • no_processor_configured_for_card_scheme = Using a card that belongs to a scheme that is not configured in the Processing Channel being used. <br/><br/>
+      • scheme_outage = With error type `operation_not_allowed`. An increased error rate has been observed for the scheme so requests are temporarily denied (so they can be downgraded to 3DS1). <br/><br/>
+      • session_already_in_use = With error type `duplicate_requests_detected`. More than one action requests have been sent in parallel for the same session. <br/><br/>
+      • currency_not_supported = With error type `unprocessable_entity`. Only relevant for AMEX. The session was created with a currency that your configuration for AMEX does not support. <br/><br/>
 
       Also, there is a number of generic error codes as described below: <br/>
       • some_field_required = Usually with an error type `unprocessable_entity`. The field `some_field` is required but not provided in the payload. <br/>
